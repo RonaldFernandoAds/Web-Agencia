@@ -1,13 +1,334 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web-agencia</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexAI - Agencia de Inteligencia Artificial para tu Negocio</title>
+    <meta name="description" content="Impulsamos resultados de negocio tangibles implementando soluciones de IA avanzadas. Automatización, análisis de datos y experiencias personalizadas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Nex<span class="logo-accent">AI</span></a>
+            
+            <div class="nav-links">
+                <a href="#servicios" class="active">Servicios</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#casos">Casos de Uso</a>
+            </div>
+            
+            <a href="#contacto" class="btn btn-primary nav-btn" style="display:inline-flex;">Comenzar Ahora</a>
+            
+            <button class="menu-btn" id="menu-btn">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#servicios" class="mobile-link">Servicios</a>
+        <a href="#proceso" class="mobile-link">Proceso</a>
+        <a href="#beneficios" class="mobile-link">Beneficios</a>
+        <a href="#casos" class="mobile-link">Casos de Uso</a>
+        <a href="#contacto" class="btn btn-primary mobile-btn" style="margin-top:2rem;">Comenzar Ahora</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in-up">🌟 La Era de la IA está Aquí</div>
+                <h1 class="fade-in-up delay-1">Revoluciona tu empresa con <span class="text-gradient">Inteligencia Artificial</span></h1>
+                <p class="fade-in-up delay-2">Dejamos de lado la teoría para integrar soluciones de IA que automatizan tareas, reducen costos operativos y escalan tus ventas exponencialmente.</p>
+                <div class="hero-actions fade-in-up delay-3">
+                    <a href="#contacto" class="btn btn-primary btn-lg">Agenda una Auditoría Gratuita</a>
+                    <a href="#servicios" class="btn btn-secondary btn-lg">Explorar Servicios</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in-up delay-4">
+                <div class="glass-orb"></div>
+                
+                <div class="stat-card card-1">
+                    <div class="stat-value">+300%</div>
+                    <div class="stat-label">Eficiencia Operativa</div>
+                </div>
+                
+                <div class="stat-card card-2">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Atención Inteligente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section bg-dark" id="servicios">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Soluciones de Próxima Generación</h2>
+                <p class="section-subtitle">Implementamos sistemas avanzados adaptados específicamente a las necesidades de tu industria para maximizar resultados.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="glass-panel service-card reveal">
+                    <div class="service-icon">
+                        <i class="ph ph-robot" style="font-size: 32px;"></i>
+                    </div>
+                    <h3>Agentes de IA y Chatbots</h3>
+                    <p>Atención al cliente ininterrumpida, captación de leads y soporte automatizado con capacidad de entender contexto real.</p>
+                </div>
+                
+                <div class="glass-panel service-card reveal delay-1">
+                    <div class="service-icon">
+                        <i class="ph ph-chart-line-up" style="font-size: 32px;"></i>
+                    </div>
+                    <h3>Análsis Predictivo</h3>
+                    <p>Transforma tus datos en pronósticos precisos de mercado, ventas y comportamiento de cliente para tomar mejores decisiones.</p>
+                </div>
+                
+                <div class="glass-panel service-card reveal delay-2">
+                    <div class="service-icon">
+                        <i class="ph ph-gears" style="font-size: 32px;"></i>
+                    </div>
+                    <h3>Automatización de Procesos</h3>
+                    <p>Elimina el peso de las tareas manuales y repetitivas (RPA) conectando tus herramientas mediante flujos inteligentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section bg-darker" id="proceso">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Cómo Transformamos tu Negocio</h2>
+                <p class="section-subtitle">Nuestra metodología de entrega garantizada asegura una integración rápida y transparente de la Inteligencia Artificial.</p>
+            </div>
+            
+            <div class="process-steps reveal">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Auditoría y Estrategia</h3>
+                        <p>Analizamos tus flujos actuales e identificamos los puntos de mayor impacto y rentabilidad para delegar a la IA.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Desarrollo a Medida</h3>
+                        <p>Entrenamos y adaptamos modelos fundacionales específicamente con los datos y reglas de tu negocio.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Integración y Pruebas</h3>
+                        <p>Conectamos la IA sin romper tu infraestructura existente, validando exhaustivamente resultados.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Despliegue y Escala</h3>
+                        <p>Lanzamiento seguro con monitoreo constante y optimizaciones continuas post-implementación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section bg-dark" id="beneficios">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-content reveal">
+                    <h2 class="section-title">El poder de los datos a tu favor. <span class="text-gradient">Gana una ventaja injusta.</span></h2>
+                    <p class="text-muted mb-4">No se trata solo de usar tecnología moderna; se trata de reducir fricción, acelerar tiempos de respuesta y construir un negocio altamente escalable que no dependa puramente de operaciones humanas.</p>
+                    
+                    <ul class="benefit-list">
+                        <li>
+                            <div class="benefit-icon"><i class="ph ph-check"></i></div>
+                            <div class="benefit-text">
+                                <h4>Reducción de Costos Drástica</h4>
+                                <p>Disminuye incidencias y la necesidad de escalar equipos humanos para tareas repetitivas.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon"><i class="ph ph-check"></i></div>
+                            <div class="benefit-text">
+                                <h4>Atención Omnicanal Instantánea</h4>
+                                <p>Resolución inmediata en WhatsApp, correo y web al mismo tiempo.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="benefit-icon"><i class="ph ph-check"></i></div>
+                            <div class="benefit-text">
+                                <h4>Aumento de Conversiones</h4>
+                                <p>Personalización de mensajes y respuestas en tiempo real incrementan tus ratios de venta.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="glass-panel ui-mockup reveal delay-1">
+                    <div class="mockup-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    
+                    <div class="mockup-body">
+                        <div class="mockup-metrics">
+                            <div class="metric-card">
+                                <div class="metric-val">87%</div>
+                                <div class="metric-title">Automatización</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val">+34%</div>
+                                <div class="metric-title">Conversión CR</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val">0.2s</div>
+                                <div class="metric-title">Tiempo Rpta.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mockup-chart" style="margin-top:auto;">
+                            <div class="bar" style="height: 30%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 35%"></div>
+                            <div class="bar" style="height: 85%"></div>
+                            <div class="bar" style="height: 100%; background: var(--primary)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section bg-darker" id="casos">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Impacto en Múltiples Industrias</h2>
+                <p class="section-subtitle">Casos prácticos de donde nuestra tecnología está marcando la verdadera diferencia hoy.</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="glass-panel use-case-card reveal">
+                    <span class="tag">E-commerce y Retail</span>
+                    <h3>Sistemas de Recomendación</h3>
+                    <p>Agentes que analizan el historial y carrito del usuario para ofertar productos hiper relevantes que realmente incrementan el ticket medio.</p>
+                </div>
+                
+                <div class="glass-panel use-case-card reveal delay-1">
+                    <span class="tag">Sector Inmobiliario</span>
+                    <h3>Agentes de Pre-Cualificación</h3>
+                    <p>Filtros conversacionales por WhatsApp que rescatan prospectos fríos, recogen requisitos y agendan visitas solo con clientes potenciales reales.</p>
+                </div>
+                
+                <div class="glass-panel use-case-card reveal delay-2">
+                    <span class="tag">B2B y SaaS</span>
+                    <h3>Asistentes de Onboarding</h3>
+                    <p>Integraciones con la base de conocimiento interna que guían paso a paso a los nuevos usuarios, reduciendo radicalmente el abandono (Churn).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="padding-bottom: 0;" id="contacto">
+        <div class="cta-box reveal">
+            <div class="cta-content">
+                <h2>¿Listo para Evolucionar?</h2>
+                <p>Déjanos tus datos o contáctanos para descubrir el potencial oculto de tu empresa propulsado por IA.</p>
+                
+                <form class="cta-form-multi" onsubmit="event.preventDefault(); alert('Formulario enviado con éxito. Te contactaremos pronto.');">
+                    <div class="form-row" style="margin-bottom:1rem;">
+                        <input type="text" class="form-input-new" placeholder="Tu Nombre o Empresa" required>
+                        <input type="email" class="form-input-new" placeholder="Tu Email Corporativo" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-full">Solicitar Auditoría de IA Especializada</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Nex<span class="logo-accent">AI</span></a>
+                    <p>Architectos avanzados del futuro comercial. Transformamos operaciones complejas en sistemas autosuficientes con Inteligencia Artificial.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Mapa del Sitio</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proceso">Cómo funciona</a></li>
+                        <li><a href="#casos">Casos de Uso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal & Contacto</h4>
+                    <ul>
+                        <li><a href="#">contacto@nexai.com</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2026 NexAI Agency. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+        <div class="whatsapp-icon">
+            <i class="ph ph-whatsapp-logo" style="font-size: 32px"></i>
+        </div>
+        <span class="whatsapp-text">Chatea con nosotros</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
 </html>
